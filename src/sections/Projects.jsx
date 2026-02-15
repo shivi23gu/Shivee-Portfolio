@@ -1,30 +1,39 @@
-import { ArrowUpRight, Github } from "lucide-react";
+import { ArrowUpRight, Github as GithubIconLucide } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
+
+// 1. IMPORT PROJECT IMAGES (Vite processes these for GitHub Pages)
+import vsCloneImg from '../assets/projects/vsclone.png';
+import portfolioImg from '../assets/projects/Portfolio.png';
+import currentproImg from '../assets/projects/currentpro.png';
+
+// 2. IMPORT SVG ICONS (Renamed to avoid naming collisions)
+import GithubSVG from "../assets/icons/github.svg";
+import LinkedinSVG from "../assets/icons/linkedin.svg";
+import GfgIconSVG from "../assets/icons/geeksforgeeks.svg";
+import LeetcodeIconSVG from "../assets/icons/leetcode.svg";
+
 
 const projects = [
   {
     title: "VS Clone",
-    description:
-      "A Visual Studio Code clone built using HTML and CSS, featuring a responsive editor interface.",
-    image: "/projects/vsclone.png",
+    description: "A Visual Studio Code clone built using HTML and CSS, featuring a responsive editor interface.",
+    image: vsCloneImg, 
     tags: ["HTML", "CSS", "JavaScript"],
     link: "#",
     github: "#",
   },
   {
     title: "Portfolio Website",
-    description:
-      "A personal portfolio website built with React and Tailwind CSS showcasing projects and skills.",
-    image: "/projects/Portfolio.png",
+    description: "A personal portfolio website built with React and Tailwind CSS showcasing projects and skills.",
+    image: portfolioImg, 
     tags: ["React", "Tailwind CSS"],
     link: "#",
     github: "#",
   },
   {
     title: "Currently Working Project",
-    description:
-      "An ongoing project built with React, Next.js, and Tailwind CSS featuring modern UI/UX and dynamic content.",
-    image: "/projects/currentpro.png",
+    description: "An ongoing project built with React, Next.js, and Tailwind CSS featuring modern UI/UX and dynamic content.",
+    image: currentproImg, 
     tags: ["React", "Next.js", "Tailwind CSS"],
     link: "#",
     github: "#",
@@ -65,16 +74,15 @@ export const Projects = () => {
               className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1"
               style={{ animationDelay: `${(idx + 1) * 100}ms` }}
             >
-              {/* Image */}
+              {/* Image Container */}
               <div className="relative overflow-hidden aspect-video">
                 <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div
-                  className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent opacity-60"
-                />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent opacity-60" />
+                
                 {/* Overlay Links */}
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a
@@ -87,7 +95,8 @@ export const Projects = () => {
                     href={project.github}
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                   >
-                    <Github className="w-5 h-5" />
+                    {/* Using the renamed Lucide icon here */}
+                    <GithubIconLucide className="w-5 h-5" />
                   </a>
                 </div>
               </div>

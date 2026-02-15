@@ -9,7 +9,7 @@ export default defineConfig({
     react(),
     tailwindcss()
    ],
-   base : "/Shivee-Portfolio",
+   base : "/Shivee-Portfolio/",
    resolve : {
     alias : {
       "@" : path.resolve(__dirname,"./src"),
