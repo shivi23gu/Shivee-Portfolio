@@ -9,7 +9,8 @@ export default defineConfig({
     react(),
     tailwindcss()
    ],
-   base : "/Shivee-Portfolio/",
+   // Changed from "/Shivee-Portfolio/" to "/" for Vercel compatibility
+   base : "/", 
    resolve : {
     alias : {
       "@" : path.resolve(__dirname,"./src"),
