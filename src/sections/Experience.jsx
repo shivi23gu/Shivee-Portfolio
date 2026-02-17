@@ -25,10 +25,10 @@ const experiences = [
   company: "Open Source (GitHub)",
   description:
     "Officially completed the Hacktoberfest 2024 challenge by contributing to multiple open-source repositories. Earned the Level 4 badge by focusing on code quality, UI improvements, and collaborative development using Git and GitHub.",
-  link: "https://shivee-portfolio.vercel.app", // Use your live Vercel link here
+  link: "https://www.holopin.io/hacktoberfest2024/userbadge/cm38jop1h37490cl6jurxbtxq", // Use your live Vercel link here
   technologies: ["Git", "GitHub", "Open Source", "React", "JavaScript"],
   current: false,
-},,
+},
 ];
 
 export const Experience = () => {
