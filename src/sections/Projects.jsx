@@ -19,8 +19,8 @@ const projects = [
     description: "A Visual Studio Code clone built using HTML and CSS, featuring a responsive editor interface.",
     image: vsCloneImg, 
     tags: ["HTML", "CSS", "JavaScript"],
-    link: "#",
-    github: "#",
+    link: "https://github.com/shivi23gu/Vs_clone",
+    github: "https://github.com/shivi23gu/Vs_clone",
   },
   {
     title: "Portfolio Website",
@@ -28,15 +28,15 @@ const projects = [
     image: portfolioImg, 
     tags: ["React", "Tailwind CSS"],
     link: "#",
-    github: "#",
+    github: "https://github.com/shivi23gu/Shivee-Portfolio",
   },
   {
-    title: "Currently Working Project",
-    description: "An ongoing project built with React, Next.js, and Tailwind CSS featuring modern UI/UX and dynamic content.",
+    title: "StayWithMe (Hotel Booking)",
+    description: "A dynamic hotel booking web application built with React, TailwindCss and Next.js, featuring component-based architecture and interactive UI.",
     image: currentproImg, 
     tags: ["React", "Next.js", "Tailwind CSS"],
-    link: "#",
-    github: "#",
+    link: "https://stay-with-me-8xuf.vercel.app/",
+    github: "https://github.com/shivi23gu/StayWithMe",
   },
 ];
 

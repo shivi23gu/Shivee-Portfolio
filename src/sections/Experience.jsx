@@ -20,15 +20,15 @@ const experiences = [
     current: false,
   },
   {
-    period: "Dec 2025 – Jan 2026",
-    role: "Portfolio Website Project",
-    company: "Personal Project",
-    description:
-      "Designed and developed a responsive personal portfolio website to showcase projects, skills, and achievements. Implemented smooth animations, mobile-friendly layout, and modern UI components using React and Tailwind CSS.",
-    link: "http://localhost:5173/#",
-    technologies: ["React", "Tailwind CSS", "JavaScript", "HTML", "CSS"],
-    current: false,
-  },
+  period: "Oct 2024 – Nov 2024", 
+  role: "Hacktoberfest Contributor",
+  company: "Open Source (GitHub)",
+  description:
+    "Officially completed the Hacktoberfest 2024 challenge by contributing to multiple open-source repositories. Earned the Level 4 badge by focusing on code quality, UI improvements, and collaborative development using Git and GitHub.",
+  link: "https://shivee-portfolio.vercel.app", // Use your live Vercel link here
+  technologies: ["Git", "GitHub", "Open Source", "React", "JavaScript"],
+  current: false,
+},,
 ];
 
 export const Experience = () => {
