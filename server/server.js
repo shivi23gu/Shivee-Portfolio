@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
+
 import contactRoutes from "./routes/contactRoutes.js";
 
 dotenv.config();
@@ -26,10 +27,4 @@ mongoose
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.log(err));
 
-// Port
-const PORT = process.env.PORT || 5000;
-
-// Server
-app.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`);
-});
+export default app;
