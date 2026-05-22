@@ -66,7 +66,7 @@ export const Contact = () => {
 
     try {
       const response = await axios.post(
-        "",
+        "/api/contact",
         formData
       );
 
