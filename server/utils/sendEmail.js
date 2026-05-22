@@ -12,28 +12,23 @@ const sendEmail = async ({ name, email, message }) => {
       },
     });
 
-   const mailOptions = {
+ const mailOptions = {
   from: process.env.EMAIL_USER,
 
-  // USER EMAIL
-  to: email,
+  to: process.env.EMAIL_USER,
 
-  subject: "Message Received Successfully",
+  replyTo: email,
+
+  subject: "New Contact Message",
 
   html: `
-    <h2>Hello ${name},</h2>
+    <h2>New Contact Message</h2>
 
-    <p>
-      Thank you for contacting me.
-    </p>
+    <p><strong>Name:</strong> ${name}</p>
 
-    <p>
-      I received your message and will reply soon.
-    </p>
+    <p><strong>Email:</strong> ${email}</p>
 
-    <hr />
-
-    <h3>Your Message:</h3>
+    <p><strong>Message:</strong></p>
 
     <p>${message}</p>
   `,
