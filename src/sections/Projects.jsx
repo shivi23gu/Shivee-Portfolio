@@ -27,7 +27,7 @@ const projects = [
     description: "A personal portfolio website built with React and Tailwind CSS showcasing projects and skills.",
     image: portfolioImg, 
     tags: ["React", "Tailwind CSS"],
-    link: "#",
+    link: "https://shivee-portfolio-ten.vercel.app/",
     github: "https://github.com/shivi23gu/Shivee-Portfolio",
   },
   {
@@ -35,7 +35,7 @@ const projects = [
     description: "A dynamic hotel booking web application built with React, TailwindCss and Next.js, featuring component-based architecture and interactive UI.",
     image: currentproImg, 
     tags: ["React", "Next.js", "Tailwind CSS"],
-    link: "https://stay-with-me-8xuf.vercel.app/",
+    link: "https://stay-with-me-pgtw.vercel.app/",
     github: "https://github.com/shivi23gu/StayWithMe",
   },
 ];
