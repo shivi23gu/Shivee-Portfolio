@@ -12,7 +12,6 @@ router.post("/login", async (req, res) => {
 
     const { email, password } = req.body;
 
-    // CHECK ADMIN EXISTS
     const admin = await Admin.findOne({ email });
 
     if (!admin) {

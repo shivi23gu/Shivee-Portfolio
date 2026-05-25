@@ -46,7 +46,6 @@ export const Contact = () => {
     message: "",
   });
 
-  // HANDLE CHANGE
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -54,7 +53,6 @@ export const Contact = () => {
     });
   };
 
-  // HANDLE SUBMIT
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -98,7 +96,6 @@ export const Contact = () => {
     <section id="contact" className="py-32 relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
 
-        {/* HEADER */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-sm font-medium tracking-wider uppercase">
             Get In Touch
@@ -118,12 +115,10 @@ export const Contact = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
 
-          {/* FORM */}
           <div className="glass p-8 rounded-3xl border border-primary/30">
 
             <form className="space-y-6" onSubmit={handleSubmit}>
 
-              {/* NAME */}
               <div>
                 <label htmlFor="name" className="block mb-2">
                   Name
@@ -141,7 +136,6 @@ export const Contact = () => {
                 />
               </div>
 
-              {/* EMAIL */}
               <div>
                 <label htmlFor="email" className="block mb-2">
                   Email
@@ -159,7 +153,6 @@ export const Contact = () => {
                 />
               </div>
 
-              {/* MESSAGE */}
               <div>
                 <label htmlFor="message" className="block mb-2">
                   Message
@@ -177,7 +170,6 @@ export const Contact = () => {
                 />
               </div>
 
-              {/* BUTTON */}
               <Button
                 type="submit"
                 size="lg"
@@ -189,7 +181,6 @@ export const Contact = () => {
                 <Send className="w-5 h-5" />
               </Button>
 
-              {/* STATUS */}
               {submitStatus.type && (
                 <div
                   className={`p-4 rounded-xl flex gap-3 items-center ${
@@ -210,7 +201,6 @@ export const Contact = () => {
             </form>
           </div>
 
-          {/* CONTACT INFO */}
           <div className="space-y-6">
 
             <div className="glass rounded-3xl p-8">
@@ -241,7 +231,6 @@ export const Contact = () => {
               ))}
             </div>
 
-            {/* AVAILABILITY */}
             <div className="glass rounded-3xl p-8 border border-primary/30">
 
               <div className="flex items-center gap-3 mb-4">

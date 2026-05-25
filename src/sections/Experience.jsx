@@ -34,11 +34,11 @@ const experiences = [
 export const Experience = () => {
   return (
     <section id="experience" className="py-32 relative overflow-hidden">
-      {/* Background Glow */}
+    
       <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2" />
 
       <div className="container mx-auto px-6 relative z-10">
-        {/* Section Header */}
+       
         <div className="max-w-3xl mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-secondary-foreground">
             Experience and{" "}
@@ -53,18 +53,15 @@ export const Experience = () => {
           </p>
         </div>
 
-        {/* Timeline */}
         <div className="relative">
           <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary/70 via-primary/30 to-transparent md:-translate-x-1/2" />
 
-          {/* Experience Cards */}
           <div className="space-y-12">
             {experiences.map((exp, idx) => (
               <div key={idx} className="relative grid md:grid-cols-2 gap-8">
-                {/* Timeline Dot */}
+             
                 <div className="absolute left-0 md:left-1/2 top-6 w-3 h-3 bg-primary rounded-full -translate-x-1/2 ring-4 ring-background z-10" />
 
-                {/* Content */}
                 <div
                   className={`pl-8 md:pl-0 ${
                     idx % 2 === 0
@@ -85,7 +82,6 @@ export const Experience = () => {
                       {exp.description}
                     </p>
 
-                    {/* 🔗 PDF / Link */}
                     {exp.link && (
                       <a
                         href={exp.link}
@@ -97,7 +93,6 @@ export const Experience = () => {
                       </a>
                     )}
 
-                    {/* Tech Stack */}
                     <div
                       className={`flex flex-wrap gap-2 mt-4 ${
                         idx % 2 === 0 ? "md:justify-end" : ""

@@ -49,12 +49,10 @@ export const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background" />
       </div>
 
-      {/* Floating dots */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(30)].map((_, i) => (
           <div
@@ -71,7 +69,6 @@ export const Hero = () => {
         ))}
       </div>
 
-      {/* Content */}
       <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
@@ -79,36 +76,35 @@ export const Hero = () => {
           <div className="space-y-8">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
               <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-              Software Engineer • Frontend Developer
+               MERN Stack Developer • Full Stack
             </span>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              Designing <span className="text-primary">digital</span>
+             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              Building <span className="text-primary">full-stack</span>
               <br />
-              web experiences with
+              web apps from
               <br />
               <span className="font-serif italic font-normal text-white">
-                precision and passion.
+                database to UI.
               </span>
             </h1>
 
-            <p className="text-lg text-muted-foreground max-w-lg">
-              Hi, I'm Shivee Gupta—a software developer. I specialize in
-              building responsive and scalable web applications with React,
-              Next.js, and TypeScript, backed by a strong foundation in Java
-              and Data Structures.
+ <p className="text-lg text-muted-foreground max-w-lg">
+              Hi, I'm Shivee Gupta — a MERN Stack Developer. I build full-stack
+              web applications using React.js, Node.js, Express.js, and MongoDB,
+              with a strong foundation in DSA and problem-solving (350+ LeetCode
+              problems, 1500+ rating).
             </p>
 
-            {/* CTA */}
+           
             <div className="flex gap-4">
-              {/* Contact Button */}
+           
               <a href="#contact">
                 <Button size="lg">
                   Contact Me <ArrowRight className="w-5 h-5" />
                 </Button>
               </a>
 
-              {/* Download CV Button */}
               <a href="/Shivee_Gupta_CV.pdf" download>
                 <AnimatedBorderButton>
                   <Download className="w-5 h-5" />
@@ -117,7 +113,6 @@ export const Hero = () => {
               </a>
             </div>
 
-            {/* SOCIAL */}
             <div className="flex items-center gap-4">
               <span className="text-sm text-muted-foreground">Follow me:</span>
               {socialLinks.map((social, idx) => (
@@ -134,7 +129,6 @@ export const Hero = () => {
             </div>
           </div>
 
-          {/* RIGHT */}
           <div className="relative max-w-md mx-auto">
             <div className="relative glass rounded-3xl p-2">
               <img
@@ -147,7 +141,6 @@ export const Hero = () => {
 
         </div>
 
-        {/* SKILLS */}
         <div className="mt-20">
           <p className="text-sm text-muted-foreground mb-6 text-center">
             Technologies I work with
@@ -165,7 +158,6 @@ export const Hero = () => {
         </div>
       </div>
 
-      {/* SCROLL */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
         <a
           href="#about"

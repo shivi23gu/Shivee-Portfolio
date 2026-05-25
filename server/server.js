@@ -10,22 +10,17 @@ dotenv.config();
 
 const app = express();
 
-// Middleware
 app.use(cors());
 app.use(express.json());
 
-// Routes
 app.use("/api/admin", adminRoutes);
 app.use("/api/contact", contactRoutes);
 
-// Test Route
 app.get("/", (req, res) => {
   res.send("Backend is running");
 });
 
-// MongoDB Connection
-// MongoDB Connection aur Server Start
-const PORT = process.env.PORT || 3000; // Yeh server ko port 3000 par chalayega
+const PORT = process.env.PORT || 3000; 
 
 mongoose
   .connect(process.env.MONGO_URL)

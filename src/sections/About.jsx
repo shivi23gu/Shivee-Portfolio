@@ -1,28 +1,29 @@
-import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
+import { Code2, Database, Rocket, Server } from "lucide-react";
 
 const highlights = [
   {
     icon: Code2,
-    title: "Clean Code",
+    title: "Frontend",
     description:
-      "Writing maintainable, scalable code that stands the test of time.",
+      "Building responsive, interactive UIs with React.js and Tailwind CSS.",
+  },
+  {
+    icon: Server,
+    title: "Backend",
+    description:
+      "Designing RESTful APIs with Node.js and Express.js for scalable applications.",
+  },
+  {
+    icon: Database,
+    title: "Database",
+    description:
+      "Managing data efficiently with MongoDB and MongoDB Atlas.",
   },
   {
     icon: Rocket,
-    title: "Performance",
+    title: "Deployment",
     description:
-      "Optimizing for speed and delivering lightning-fast user experiences.",
-  },
-  {
-    icon: Users,
-    title: "Collaboration",
-    description: "Working closely with teams to bring ideas to life.",
-  },
-  {
-    icon: Lightbulb,
-    title: "Innovation",
-    description:
-      "Staying ahead with the latest technologies and best practices.",
+      "Shipping full-stack apps on Vercel with CI/CD and environment-based config.",
   },
 ];
 
@@ -31,7 +32,7 @@ export const About = () => {
     <section id="about" className="py-32 relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Column */}
+
           <div className="space-y-8">
             <div className="animate-fade-in">
               <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase">
@@ -40,49 +41,45 @@ export const About = () => {
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
-              Building the future,
+              Building full-stack apps,
               <span className="font-serif italic font-normal text-white">
                 {" "}
-                one component at a time.
+                from database to UI.
               </span>
             </h2>
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I’m a passionate software engineering fresher with a strong
-                interest in frontend development and web technologies. My
-                curiosity about how websites work led me to explore modern tools
-                and frameworks, where I enjoy turning ideas into clean,
-                responsive, and user-friendly interfaces. I’m continuously
-                learning, building projects, and improving my skills to create
-                meaningful digital experiences.
+                I'm a MERN Stack Developer fresher with hands-on experience
+                building and deploying full-stack web applications using
+                React.js, Node.js, Express.js, and MongoDB. I enjoy turning
+                ideas into complete products — from designing REST APIs to
+                crafting responsive, user-friendly interfaces.
               </p>
               <p>
-                I’m a frontend-focused software engineering fresher with
-                hands-on experience in HTML, CSS, JavaScript, React, TypeScript,
-                Next.js and Tailwind CSS. I enjoy building responsive websites
-                and interactive user interfaces, paying close attention to
-                design, performance, and user experience. I’m eager to learn,
-                grow, and contribute to real-world projects.
+                I've built real-world projects including a hotel booking
+                platform with role-based access control and JWT-secured APIs,
+                and a full-stack portfolio with an automated contact system.
+                I'm also an active DSA problem solver with 350+ problems solved
+                on LeetCode (1500+ rating), which keeps my problem-solving
+                sharp.
               </p>
               <p>
                 When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
+                contributing to open-source projects, or solving DSA challenges
+                to sharpen my skills.
               </p>
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                "My goal is to build digital experiences that are not only
-                functional, but also intuitive and enjoyable — products that
-                users find easy to use and developers can maintain with
-                confidence."
+                "My goal is to build full-stack products that are fast,
+                secure, and maintainable — experiences that users love and
+                code that developers are proud of."
               </p>
             </div>
           </div>
 
-          {/* Right Column - Hilights */}
           <div className="grid sm:grid-cols-2 gap-6">
             {highlights.map((item, idx) => (
               <div

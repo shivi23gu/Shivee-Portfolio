@@ -28,7 +28,7 @@ export const Navbar = () => {
       }`}
     >
       <nav className="container mx-auto px-6 flex items-center justify-end gap-8">
-        {/* Desktop Nav - Centered/Right Aligned */}
+     
         <div className="hidden md:flex items-center gap-1">
           <div className="glass rounded-full px-2 py-1 flex items-center gap-1">
             {navLinks.map((link, index) => (
@@ -43,14 +43,12 @@ export const Navbar = () => {
           </div>
         </div>
 
-        {/* CTA Button */}
         <div className="hidden md:block">
           <Button size="sm" className="rounded-full px-6">
             Contact Me
           </Button>
         </div>
 
-        {/* Mobile Menu Button */}
         <button
           className="md:hidden p-2 text-foreground cursor-pointer"
           onClick={() => setIsMobileMenuOpen((prev) => !prev)}
@@ -59,7 +57,6 @@ export const Navbar = () => {
         </button>
       </nav>
 
-      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden glass-strong animate-fade-in absolute top-full left-0 w-full border-t border-white/10">
           <div className="container mx-auto px-6 py-6 flex flex-col gap-4">

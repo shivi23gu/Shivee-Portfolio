@@ -6,7 +6,6 @@ const protectAdmin = async (req, res, next) => {
 
     let token = req.headers.authorization;
 
-    // CHECK TOKEN EXISTS
     if (!token) {
       return res.status(401).json({
         success: false,
@@ -14,16 +13,13 @@ const protectAdmin = async (req, res, next) => {
       });
     }
 
-    // REMOVE "Bearer "
     token = token.split(" ")[1];
 
-    // VERIFY TOKEN
     const decoded = jwt.verify(
       token,
       process.env.JWT_SECRET
     );
 
-    // SAVE ADMIN ID
     req.adminId = decoded.id;
 
     next();

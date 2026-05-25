@@ -26,13 +26,11 @@ function App() {
 
       <Routes>
 
-        {/* Portfolio Home */}
         <Route
           path="/"
           element={<PortfolioHome />}
         />
 
-        {/* Admin Dashboard */}
         <Route
           path="/admin"
           element={<AdminDashboard />}
