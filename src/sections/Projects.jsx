@@ -1,7 +1,7 @@
 import { ArrowUpRight, Github as GithubIconLucide } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
-import vsCloneImg from '../assets/projects/vsclone.png';
+import talentbridgeImg from '../assets/projects/vsclone.png';
 import portfolioImg from '../assets/projects/Portfolio.png';
 import currentproImg from '../assets/projects/currentpro.png';
 
@@ -9,7 +9,6 @@ import GithubSVG from "../assets/icons/github.svg";
 import LinkedinSVG from "../assets/icons/linkedin.svg";
 import GfgIconSVG from "../assets/icons/geeksforgeeks.svg";
 import LeetcodeIconSVG from "../assets/icons/leetcode.svg";
-
 
 const projects = [
   {
@@ -29,14 +28,15 @@ const projects = [
     github: "https://github.com/shivi23gu/Shivee-Portfolio",
   },
   {
-    title: "VS Code Clone",
-    description: "A pixel-perfect Visual Studio Code clone built with HTML and CSS, replicating the editor layout, sidebar, tabs, and responsive interface.",
-    image: vsCloneImg,
-    tags: ["HTML", "CSS", "JavaScript"],
-    link: "https://github.com/shivi23gu/Vs_clone",
-    github: "https://github.com/shivi23gu/Vs_clone",
+    title: "TalentBridge — AI Job Portal",
+    description: "An AI-powered MERN job portal with smart job matching, Claude-powered cover letter generation, resume analyzer, interview prep, and employer application scoring.",
+    image: talentbridgeImg,
+    tags: ["React.js", "Vite", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Claude AI", "JWT", "Vercel"],
+    link: "https://job-portal-1t8k.vercel.app/",
+    github: "https://github.com/shivi23gu/Job-Portal",
   },
 ];
+
 export const Projects = () => {
   return (
     <section id="projects" className="py-32 relative overflow-hidden">
@@ -44,7 +44,6 @@ export const Projects = () => {
       <div className="absolute bottom-1/4 left-0 w-64 h-64 bg-highlight/5 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-6 relative z-10">
-    
         <div className="text-center mx-auto max-w-3xl mb-16">
           <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
             Featured Work
@@ -56,7 +55,7 @@ export const Projects = () => {
               make an impact.
             </span>
           </h2>
-           <p className="text-muted-foreground animate-fade-in animation-delay-200">
+          <p className="text-muted-foreground animate-fade-in animation-delay-200">
             Full-stack MERN applications and frontend projects — built, deployed, and production-ready.
           </p>
         </div>
@@ -68,7 +67,6 @@ export const Projects = () => {
               className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1"
               style={{ animationDelay: `${(idx + 1) * 100}ms` }}
             >
-              
               <div className="relative overflow-hidden aspect-video">
                 <img
                   src={project.image}
@@ -76,19 +74,22 @@ export const Projects = () => {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent opacity-60" />
-                
+
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a
                     href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                   >
                     <ArrowUpRight className="w-5 h-5" />
                   </a>
                   <a
                     href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                   >
-                
                     <GithubIconLucide className="w-5 h-5" />
                   </a>
                 </div>
@@ -99,9 +100,7 @@ export const Projects = () => {
                   <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
                     {project.title}
                   </h3>
-                  <ArrowUpRight
-                    className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all"
-                  />
+                  <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
                 </div>
                 <p className="text-muted-foreground text-sm">
                   {project.description}
