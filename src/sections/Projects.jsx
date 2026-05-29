@@ -1,7 +1,7 @@
 import { ArrowUpRight, Github as GithubIconLucide } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
-import talentbridgeImg from '../assets/projects/vsclone.png';
+import talentbridgeImg from '../assets/projects/TalentBridge.png';
 import portfolioImg from '../assets/projects/Portfolio.png';
 import currentproImg from '../assets/projects/currentpro.png';
 
